@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>黄益妙201906062108</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="author" content="黄益妙">
+    <meta name="keywords" content="书店,喵喵书店,图书">
+    <meta name="description" content="喵喵书店是一个销售书籍的网上书店">
+    <meta name="robots" content="index,follow">
+</head>
+<body>
+    <!--页眉-->
+    <div id="header-wrapper">
+        <!--网站logo-->
+        <header class="container">
+            <div id="logo">
+                <a href="index.html"><h1>Sweeth0me_f0r_mia0mia0</h1></a>
+            </div>
+            <div id="search">
+                <form action="index.html" method="GET">
+                    <input type="search" placeholder="站内搜索(仅支持中文)" id="value">
+                    <input type="submit" value="搜索" onclick="buttonclick();">
+                </form>
+            </div>
+        </header>
+        <!--导航菜单-->
+        <div id="nav">
+            <nav class="container">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="category.html">书籍分类</a></li>
+                    <li><a href="specials.html">特刊降价</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+                <div id="displaydate"></div>
+                <div id="displaytime"></div>
+                <div id="menu-logo">
+                    <a href="cart.html">购物车</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!--内容-->
+    <div id="content-wrapper" class="container">
+        <!--左边内容区-->
+        <article>
+            <section class="crumb-nav">您现在的位置：<a href="index.html">首页</a>>>购物车</section>
+            <section class="cartt">
+                <h2 id="title8">购物车</h2>
+                <table class="cart-table">
+                    <tr class="cart-title">
+                        <th colspan="2">名称</th>
+                        <th>单价</th>
+                        <th>数量</th>
+                        <th>合计</th>
+                    </tr>
+                    <tr>
+                        <td class="td-center"><a href="details.html"><img width="120" height="160" src="images/selling1.jpg" alt="封面"></a></td>
+                        <td><h3>《奇蛋物语》</h3></td>
+                        <td class="td-right">100.00</td>
+                        <td class="td-right">1</td>
+                        <td class="td-right">100.00</td>
+                    </tr>
+                    <tr>
+                        <td class="td-center"><a href="details.html"><img width="120" height="160" src="images/selling2.jpg" alt="封面"></a></td>
+                        <td><h3>《挪威的森林》</h3></td>
+                        <td class="td-right">100.00</td>
+                        <td class="td-right">1</td>
+                        <td class="td-right">100.00</td>
+                    </tr>
+                    <tr>
+                        <td class="td-center"><a href="details.html"><img width="120" height="160" src="images/selling4.jpg" alt="封面"></a></td>
+                        <td><h3>《鬼哭街 -The Cyber Slayer-》</h3></td>
+                        <td class="td-right">100.00</td>
+                        <td class="td-right">1</td>
+                        <td class="td-right">100.00</td>
+                    </tr>
+                    <tr class="cart-total">
+                        <td colspan="5" class="td-right">3件商品总价（不含运费）：￥300.00<a href="#">去结算</a> </td>
+                    </tr>
+                </table>
+            </section>
+        </article>
+        <!--右边边栏区-->
+        <aside>
+            <!--广告区-->
+            <section id="advert">
+                <a href="#"><img src="images/%23ad1.jpg" alt="广告" /></a>
+                <a href="#"><img src="images/%23ad2.jpg" alt="广告" /></a>
+                <a href="#"><img src="images/%23ad3.jpg" alt="广告" /></a>
+            </section>
+
+            <div class="border"><img src="images/border.gif" alt="分割线" /></div>
+
+            <!--畅销图书-->
+            <section id= "best-selling">
+                <h2  id="title7">畅销图书</h2>
+                <ul>
+                    <li><a class="selling" href="#">奇蛋物语</a>
+                        <div class="curr">
+                            <div class="p-img">
+                                <a title="奇蛋物语" href="https://zh.wikipedia.org/wiki/%E5%A5%87%E8%9B%8B%E7%89%A9%E8%AF%AD" target = "_blank"><img width="80" height="80" src="images/selling1.jpg"></a>
+                            </div>
+                            <div class="p-name">
+                                <a title="奇蛋物语" href="#">奇蛋物语</a>
+                                <strong>￥50</strong>
+                                <del>￥500</del>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a class="selling" href="#">挪威的森林</a>
+                        <div class="curr">
+                            <div class="p-img">
+                                <a title="挪威的森林" href="https://zh.wikipedia.org/wiki/%E6%8C%AA%E5%A8%81%E7%9A%84%E6%A3%AE%E6%9E%97_(%E5%B0%8F%E8%AF%B4)" target = "_blank"><img width="80" height="80" src="images/selling2.jpg"></a>
+                            </div>
+                            <div class="p-name">
+                                <a title="挪威的森林" href="#">挪威的森林</a>
+                                <strong>￥50</strong>
+                                <del>￥300</del>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="border"><img src="images/border.gif" alt="分割线" /></div>
+
+            <!--图书分类-->
+            <section class="aside-section">
+                <h2 id="title4">图书分类</h2>
+                <ul>
+                    <li><a href="category.html">编程语言</a></li>
+                    <li><a href="category.html">轻小说</a></li>
+                    <li><a href="category.html">文学巨著</a></li>
+                    <li><a href="category.html">视觉小说</a></li>
+                    <li><a href="category.html">考试认证</a></li>
+                </ul>
+            </section>
+            <!--合作伙伴-->
+            <section class="aside-section">
+                <h2 id="title5">合作伙伴</h2>
+                <ul>
+                    <li><a href="#">下北泽研究中心</a></li>
+                    <li><a href="#">美女与野兽出版社</a></li>
+                    <li><a href="#">先辈特供出版社</a></li>
+                    <li><a href="#">杰哥不要出版社</a></li>
+                </ul>
+            </section>
+
+            <div class="border"><img src="images/border.gif" alt="分割线" /></div>
+
+            <!--关于书店-->
+            <section class="about">
+                <h2 id="title6">关于书店</h2>
+                <img src="images/about.gif" alt="喵喵书店">
+                <p>喵喵书店成立于2021年3月，是在先辈恳求了114514次，找了阿伟喊了1919次杰哥不要之后创办的综合出版单位，
+                    扎根在下北泽这座美丽的城市，秉承着“自强不息，厚德载物”的人文精神</p>
+            </section>
+        </aside>
+    </div>
+
+    <!--页脚-->
+    <div id="footer-wrapper">
+        <footer class="container">
+            <section>
+                <a href="index.html">首页</a>&nbsp;<a href="about.html">关于我们</a>&nbsp;<a href="#">服务条款</a>&nbsp;<a
+                    href="#">隐私策略</a>&nbsp;<a href="contact.html">联系我们</a>
+            </section>
+        </footer>
+    </div>
+
+    <!--版权标志-->
+    <section id="copyright" class="container">
+        Copyright (C) <a href="index.html">喵喵书店</a> 2016-2021, All Rights Reserved | 京ICP证 000001 号音像制品经营许可证
+        <address>通讯地址：下北泽学研大厦5A座 读者服务部&nbsp;&nbsp;电话：(925) 268-0330&nbsp;&nbsp;
+        网管信箱：huangyimiao666@gmail.com</address>
+    </section>
+</body>
+</html>
